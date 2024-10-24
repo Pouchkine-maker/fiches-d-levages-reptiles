@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Gecko à Crète et Autres Reptiles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #008000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: white;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #008000;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            border-radius: 10px;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Le Gecko à Crète et Autres Reptiles</h1>
+    <nav>
+        <a href="#gecko" onclick="openModal('geckoModal')">Gecko à Crète</a>
+        <a href="#serpent" onclick="openModal('serpentModal')">Serpent Royal</a>
+        <a href="#lezard" onclick="openModal('lezardModal')">Lézard à Collerette</a>
+        <a href="#chameleon" onclick="openModal('chameleonModal')">Caméléon Panthère</a>
+        <a href="#iguane" onclick="openModal('iguaneModal')">Iguane Vert</a>
+        <a href="#crocodile" onclick="openModal('crocodileModal')">Crocodile Nain</a>
+        <a href="#collier" onclick="openModal('collierModal')">Lézard à Collier</a>
+    </nav>
+</header>Certains reptiles sont soumis aux droits de <a href="drit de cdc.html">CDC en France.</a>
+
+<div id="geckoModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('geckoModal')">&times;</span>
+        <h2>Le Gecko à Crète</h2>
+        <p>Le gecko à Crète (<em>Tarentola mauritanica</em>) est un reptile endémique à l'île de Crète. Il mesure généralement entre 10 et 15 cm de long et est connu pour ses couleurs vives qui varient du vert au brun.</p>
+        <h3>Habitat</h3>
+        <p>Ce gecko est principalement trouvé dans des zones rocheuses, des champs, des jardins et même dans des environnements urbains. Il préfère les endroits chauds et ensoleillés.</p>
+        <h3>Comportement</h3>
+        <p>Ce gecko est nocturne et a un comportement territorial. Lorsqu'il se sent menacé, il peut perdre sa queue pour échapper à un prédateur.</p>
+        <h3>Conservation</h3>
+        <p>Classé comme vulnérable, le gecko à Crète fait face à des menaces telles que la perte d'habitat et le changement climatique.</p>
+    </div>
+</div>
+
+<!-- Serpent Royal Modal -->
+<div id="serpentModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('serpentModal')">&times;</span>
+        <h2>Serpent Royal</h2>
+        <p>Le serpent royal, ou python royal (<em>Python regius</em>), est un reptile populaire dans le monde des animaux de compagnie. Il mesure en moyenne entre 1,2 et 1,5 mètre.</p>
+        <h3>Élevage</h3>
+        <p>Pour élever un serpent royal, il est important de fournir un habitat adéquat :</p>
+        <ul>
+            <li>Terrarium de 90 cm minimum avec une bonne ventilation.</li>
+            <li>Température entre 24 et 30 °C, avec un gradient thermique.</li>
+            <li>Substrat comme la coco ou le papier essuie-tout.</li>
+            <li>Accessoires comme des cachettes et des branches pour grimper.</li>
+        </ul>
+        <h3>Alimentation</h3>
+        <p>Ils se nourrissent principalement de souris et de rats, selon leur taille. Il est recommandé de nourrir un serpent royal une fois toutes les 1 à 2 semaines.</p>
+        <h3>Comportement</h3>
+        <p>Ce serpent est généralement docile et peut être manipulé, ce qui le rend idéal pour les débutants.</p>
+    </div>
+</div>
+
+<!-- Lézard à Collerette Modal -->
+<div id="lezardModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('lezardModal')">&times;</span>
+        <h2>Lézard à Collerette</h2>
+        <p>Le lézard à collerette (<em>Chlamydosaurus kingii</em>) est un lézard spectaculaire, connu pour sa grande collerette de peau qu'il déploie lorsqu'il se sent menacé.</p>
+        <h3>Élevage</h3>
+        <p>Pour élever un lézard à collerette :</p>
+        <ul>
+            <li>Terrarium spacieux avec une bonne hauteur (minimum 150 cm).</li>
+            <li>Température entre 26 et 32 °C, avec des UVB pour une bonne santé.</li>
+            <li>Substrat de terre et des plantes pour le camouflage.</li>
+        </ul>
+        <h3>Alimentation</h3>
+        <p>Ils se nourrissent principalement d'insectes, comme des grillons et des blattes. Assurez-vous de fournir des suppléments vitaminiques.</p>
+        <h3>Comportement</h3>
+        <p>Ces lézards sont actifs et curieux, mais peuvent être timides. Ils ont besoin d'un espace adéquat pour grimper et explorer.</p>
+    </div>
+</div>
+
+<!-- Caméléon Panthère Modal -->
+<div id="chameleonModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('chameleonModal')">&times;</span>
+        <h2>Caméléon Panthère</h2>
+        <p>Le caméléon panthère (<em>Furcifer pardalis</em>) est célèbre pour sa capacité à changer de couleur et sa beauté. Il est originaire de Madagascar.</p>
+        <h3>Élevage</h3>
+        <p>Pour élever un caméléon panthère :</p>
+        <ul>
+            <li>Terrarium vertical avec des plantes vivantes.</li>
+            <li>Température de 24 à 30 °C, avec une humidité de 50 à 70 %.</li>
+            <li>Éclairage UVB essentiel pour la santé.</li>
+        </ul>
+        <h3>Alimentation</h3>
+        <p>Ils se nourrissent principalement d'insectes, comme des mouches, des criquets et des vers de farine. L'apport de calcium et de vitamines est crucial.</p>
+        <h3>Comportement</h3>
+        <p>Le caméléon panthère est un reptile solitaire qui préfère vivre seul. Il nécessite un habitat bien aménagé pour se cacher et grimper.</p>
+    </div>
+</div>
+
+<!-- Iguane Vert Modal -->
+<div id="iguaneModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('iguaneModal')">&times;</span>
+        <h2>Iguane Vert</h2>
+        <p>L'iguane vert (<em>Iguana iguana</em>) est un reptile herbivore populaire, originaire des forêts tropicales d'Amérique centrale et d'Amérique du Sud. Il peut atteindre jusqu'à 2 mètres de long.</p>
+        <h3>Élevage</h3>
+        <p>Pour élever un iguane vert :</p>
+        <ul>
+            <li>Terrarium spacieux de 2 mètres minimum.</li>
+            <li>Température de 27 à 32 °C, avec un accès à un endroit plus chaud.</li>
+            <li>Éclairage UVB pour favoriser la synthèse de la vitamine D3.</li>
+        </ul>
+        <h3>Alimentation</h3>
+        <p>Ils se nourrissent principalement de feuilles vertes, de fleurs et de fruits. Évitez les aliments riches en protéines.</p>
+        <h3>Comportement</h3>
+        <p>Les iguanes peuvent être timides et nécessitent un temps d'adaptation. Ils aiment grimper et explorer leur environnement.</p>
+    </div>
+</div>
+
+<!-- Crocodile Nain Modal -->
+<div id="crocodileModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('crocodileModal')">&times;</span>
+        <h2>Crocodile Nain</h2>
+        <p>Le crocodile nain (<em>Osteolaemus tetraspis</em>) est un petit crocodile qui ne dépasse généralement pas 1,5 mètre. Il vit principalement dans les marécages et les rivières d'Afrique.</p>
+        <h3>Élevage</h3>
+        <p>Pour élever un crocodile nain :</p>
+        <ul>
+            <li>Terrarium aquatique avec une zone terrestre.</li>
+            <li>Température de l'eau entre 24 et 28 °C.</li>
+            <li>Filtration d'eau et UVB pour la santé.</li>
+        </ul>
+        <h3>Alimentation</h3>
+        <p>Ils se nourrissent principalement de poissons, de crustacés et de petits animaux. Une alimentation variée est essentielle.</p>
+        <h3>Comportement</h3>
+        <p>Le crocodile nain est généralement plus calme que d'autres espèces de crocodiles, mais il peut être territorial.</p>
+    </div>
+</div>
+
+<!-- Lézard à Collier Modal -->
+<div id="collierModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('collierModal')">&times;</span>
+        <h2>Lézard à Collier</h2>
+        <p>Le lézard à collier (<em>Ctenosaura pectinata</em>) est un reptile terrestre vivant dans des zones arides. Il est facilement identifiable grâce à sa collerette de couleur vive autour du cou.</p>
+        <h3>Élevage</h3>
+        <p>Pour élever un lézard à collier :</p>
+        <ul>
+            <li>Terrarium avec un bon espace au sol pour se déplacer.</li>
+            <li>Température entre 25 et 35 °C, avec un point chaud.</li>
+            <li>Substrat de sable ou de terre avec des rochers pour grimper.</li>
+        </ul>
+        <h3>Alimentation</h3>
+        <p>Ils sont omnivores et se nourrissent d'insectes, de légumes et de fruits. Une alimentation équilibrée est nécessaire.</p>
+        <h3>Comportement</h3>
+        <p>Ces lézards sont actifs et sociaux, et peuvent vivre en groupes. Ils aiment grimper et explorer leur environnement.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Le Gecko à Crète et Autres Reptiles. Vincent Daveu.</p>
+</footer>
+
+<script>
+    function openModal(modalId) {
+        document.getElementById(modalId).style.display = "block";
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target.className === 'modal') {
+            event.target.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
